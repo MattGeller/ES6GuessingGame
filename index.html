@@ -2,9 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="script.js"></script>
     <title>Guessing Game</title>
 </head>
 <body>
+<div class="container">
+    <div class="col-md-2 col-md-offset-5" id="main-container">
+        <h3 class="col-md-2 col-md-offset-5">Guess the number between 1-10</h3>
+        <br>
+        <input class="form-control" id="input_field" type="text" title="guess_field" placeholder="What's the number?" maxlength=3 size=3>
+        <div id="response_div">Guess a Number Between 1 and 10</div>
+        <button id="submit_button" class="btn btn-success">
+            Submit Guess
+        </button>
 
+        <br>
+    </div>
+</div>
+
+<!--Victory Screen Modal-->
+<div class="modal fade" id="victoryModal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
